@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>bootstrap-demo</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			padding-top: 50px;
+		}
+		.sider-left{
+			position: fixed;
+			top: 50px;
+			left: 0;
+			bottom: 0;
+			padding: 0;
+			background: #ddd;
+		}
+		.nav-pills>li>a {
+			border-radius: 0;
+		}
+		.first{
+			margin: 10px 0 20px 0;
+		}
+		.info-gl{
+			margin-bottom: 20px; 
+		}
+		.divider{
+			margin: 10px 0 20px;
+		}
+		.panel-list{
+			padding-top: 10px;
+		}
+		.project .btn{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse1">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#collapse1">信息管理系统</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="collapse1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">首页</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">功能<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">信息建立</a></li>
+							<li><a href="#">信息查询</a></li>
+							<li><a href="#">信息管理</a></li>
+							<li class="divider"></li>
+							<li><a href="#">设置</a></li>
+							<li><a href="#">帮助</a></li>
+						</ul>
+					</li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="用户名">
+						<input type="text" class="form-control" placeholder="密码">
+					</div>
+					<button type="submit" class="btn btn-default">登录</button>
+				</form>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="sider-left col-md-2">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active first"><a href="#">首页</a>	<li>
+					<li><a href="#">信息建立</a></li>
+					<li><a href="#">信息查询</a></li>
+					<li class="info-gl"><a href="#">信息管理</a></li>
+					<li><a href="#">设置</a></li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+			</div>
+			<div class="col-md-10 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+				<h2>管理控制台</h2>
+				<hr class="divider">
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">操作1</button>
+					<button class="btn btn-primary">操作2</button>
+					<button class="btn btn-success">操作3</button>
+					<button class="btn btn-info">操作4</button>
+					<button class="btn btn-warning">操作5</button>
+					<button class="btn btn-danger">操作6</button>
+				</div>
+				<div class="row panel-list">
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<!-- Default panel contents -->
+							<div class="panel-heading">最新提醒</div>
+							<div class="panel-body">
+								<div class="alert alert-success">
+									提示:您的订单(2014001)已审核通过
+								</div>
+								<div class="alert alert-danger">
+									提示:您的订单(2014002)被打回
+								</div>
+								<div class="alert alert-warning">
+									提示:您的订单(2014003)客户延迟付款
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<!-- Default panel contents -->
+							<div class="panel-heading">最新提醒</div>
+							<div class="panel-body">
+								<div class="alert alert-info">
+									订单审批
+									<span class="badge">42</span>
+								</div>
+								<div class="alert alert-info">
+									收款确认
+									<span class="badge">20</span>
+								</div>
+								<div class="alert alert-info">
+									付款确认
+									<span class="badge">10</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row panel-list">
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<!-- Default panel contents -->
+							<div class="panel-heading">最新提醒</div>
+							<div class="panel-body">
+								<table class="table table-striped">
+									<tr>
+										<th>#</th>
+										<th>产品</th>
+										<th>数量</th>
+										<th>总金额</th>
+										<th>业务员</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Apple Macbook air</td>
+										<td>10</td>
+										<td>80000</td>
+										<td>王小贱</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Apple Macbook air</td>
+										<td>10</td>
+										<td>80000</td>
+										<td>王小贱</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Apple Macbook air</td>
+										<td>10</td>
+										<td>80000</td>
+										<td>王小贱</td>
+									</tr>
+								</table>
+								<button class="btn btn-primary" type="button">查看详情&raquo;</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 project">
+						<div class="panel panel-primary">
+							<!-- Default panel contents -->
+							<div class="panel-heading">工程进度</div>
+							<div class="panel-body">
+								<a class="btn btn-primary" href="#">水井挖掘工程</a>
+								<div class="progress">
+								    <div class="progress-bar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								    </div>
+								</div>
+								<a class="btn btn-danger" href="#">基建工程</a>
+								<div class="progress">
+								    <div class="progress-bar progress-bar-danger" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="../imooc/js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
